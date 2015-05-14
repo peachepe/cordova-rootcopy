@@ -1,5 +1,5 @@
 {
-    "version": "1.0",
+    "version": "1.0.0",
     "name": "com.peachepe.rootcopy",
     "cordova_name": "RootCopy",
     "description": "Copies files that can only be copied with root permissions.",
