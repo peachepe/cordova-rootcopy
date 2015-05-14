@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    id="com.peachepe.RootCopy"
+    version="0.1">
+
+    <name>RootCopy</name>
+
+    <license>MIT</license>
+
+    <description>Copies files that can only be copied with root permissions.</description>
+    <author>Mario Delgado</author>
+
+    <engines>
+        <engine name="cordova" version=">=3.3.0" />
+    </engines>
+
+    <js-module src="www/RootCopy.js" name="RootCopy">
+        <clobbers target="RootCopy" />
+    </js-module>
+
+    <!-- android -->
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="RootCopy">
+                <param name="android-package" value="com.peachepe.RootCopy"/>
+            </feature>
+        </config-file>
+
+        <source-file src="src/android/RootCopy.java" target-dir="src/com/peachepe"/>
+
+    </platform>
+
+</plugin>
+
+<!-- vim: set expandtab : -->
