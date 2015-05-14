@@ -1,0 +1,16 @@
+{
+    "version": "1.0",
+    "name": "com.peachepe.rootcopy",
+    "cordova_name": "RootCopy",
+    "description": "Copies files that can only be copied with root permissions.",
+    "license": "MIT",
+    "platforms": [
+        "android"
+    ],
+    "engines": [
+        {
+            "name": "cordova",
+            "version": ">=3.3.0"
+        }
+    ]
+}
